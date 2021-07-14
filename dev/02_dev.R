@@ -15,12 +15,12 @@
 
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
-usethis::use_package( "thinkr" )
+usethis::use_package( "RPostgreSQL")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
-golem::add_module( name = "name_of_module1" ) # Name of the module
-golem::add_module( name = "name_of_module2" ) # Name of the module
+golem::add_module( name = "module1" ) # Name of the module
+# golem::add_module( name = "name_of_module2" ) # Name of the module
 
 ## Add helper functions ----
 ## Creates fct_* and utils_*
@@ -33,10 +33,6 @@ golem::add_js_file( "script" )
 golem::add_js_handler( "handlers" )
 golem::add_css_file( "custom" )
 
-## Add internal datasets ----
-## If you have data in your package
-usethis::use_data_raw( name = "my_dataset", open = FALSE ) 
-
 ## Tests ----
 ## Add one line by test you want to create
 usethis::use_test( "app" )
@@ -44,15 +40,8 @@ usethis::use_test( "app" )
 # Documentation
 
 ## Vignette ----
-usethis::use_vignette("UpisDashboard")
-devtools::build_vignettes()
-
-## Code Coverage----
-## Set the code coverage service ("codecov" or "coveralls")
-usethis::use_coverage()
-
-# Create a summary readme for the testthat subdirectory
-covrpage::covrpage()
+# usethis::use_vignette("UpisDashboard")
+# devtools::build_vignettes()
 
 ## CI ----
 ## Use this part of the script if you need to set up a CI
@@ -68,6 +57,4 @@ usethis::use_github_action()
 usethis::use_github_action_check_standard()
 
 # You're now set! ----
-# go to dev/03_deploy.R
-rstudioapi::navigateToFile("dev/03_deploy.R")
 

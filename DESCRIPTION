@@ -5,11 +5,25 @@ Authors@R: person('Luka', 'Jovicic', email = 'luka.jovicic16+upis@gmail.com', ro
 Description: Dashboard for upis data.
 License: AGPL (>= 3)
 Imports: 
+    attempt,
     config (>= 0.3.1),
+    DT,
+    glue,
     golem (>= 0.3.1),
+    htmltools,
+    processx,
+    RPostgreSQL,
     shiny (>= 1.6.0)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 URL: https://github.com/luka-j/UpisDashboard
 BugReports: https://github.com/luka-j/UpisDashboard/issues
+Suggests: 
+    rmarkdown,
+    knitr,
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
+VignetteBuilder: knitr
