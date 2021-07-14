@@ -48,7 +48,7 @@ usethis::use_test( "app" )
 ## service for your application
 ## 
 ## (You'll need GitHub there)
-usethis::use_github()
+usethis::use_github(protocol = "ssh")
 
 # GitHub Actions
 usethis::use_github_action() 
