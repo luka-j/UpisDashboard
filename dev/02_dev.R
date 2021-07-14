@@ -16,6 +16,8 @@
 ## Dependencies ----
 ## Add one line by package you want to add as dependency
 usethis::use_package( "RPostgreSQL")
+usethis::use_package("redux")
+usethis::use_package("future")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
@@ -48,7 +50,7 @@ usethis::use_test( "app" )
 ## service for your application
 ## 
 ## (You'll need GitHub there)
-usethis::use_github(protocol = "ssh")
+ # usethis::use_github(protocol = "ssh") # let IntelliJ handle VCS
 
 # GitHub Actions
  # usethis::use_github_action()
