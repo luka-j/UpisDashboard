@@ -1,4 +1,4 @@
-#' module1 UI Function
+#' attr_selector UI Function
 #'
 #' @description A shiny Module.
 #'
@@ -7,17 +7,17 @@
 #' @noRd 
 #'
 #' @importFrom shiny NS tagList 
-mod_module1_ui <- function(id){
+mod_attr_selector_ui <- function(id){
   ns <- NS(id)
   tagList(
  
   )
 }
     
-#' module1 Server Functions
+#' attr_selector Server Functions
 #'
 #' @noRd 
-mod_module1_server <- function(id){
+mod_attr_selector_server <- function(id){
   moduleServer( id, function(input, output, session){
     ns <- session$ns
  
@@ -25,7 +25,7 @@ mod_module1_server <- function(id){
 }
     
 ## To be copied in the UI
-# mod_module1_ui("module1_ui_1")
+# mod_attr_selector_ui("attr_selector_ui_1")
     
 ## To be copied in the server
-# mod_module1_server("module1_ui_1")
+# mod_attr_selector_server("attr_selector_ui_1")

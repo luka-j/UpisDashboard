@@ -8,9 +8,11 @@ app_ui <- function(request) {
   tagList(
     # Leave this function for adding external resources
     golem_add_external_resources(),
-    # Your application UI logic 
-    fluidPage(
-      h1("UpisDashboard")
+    # Your application UI logic
+    shinydashboard::dashboardPage(
+      shinydashboard::dashboardHeader(title = "Upis Dashboard"),
+      shinydashboard::dashboardSidebar(),
+      shinydashboard::dashboardBody()
     )
   )
 }

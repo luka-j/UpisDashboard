@@ -18,7 +18,7 @@ memo <- function (f) {
       redux::bin_to_object(cached)
     } else {
       res <- f(...)
-      future({REDIS$SET(key, redux::object_to_bin(res))})
+      future::future({REDIS$SET(key, redux::object_to_bin(res))})
       res
     }
   }
